@@ -27,5 +27,5 @@ try:
     brovser_ID("submit_button").click()
 
 finally:
-    time.sleep(30)
+    time.sleep(20)
     browser.quit()
