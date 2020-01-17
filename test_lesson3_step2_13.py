@@ -37,6 +37,6 @@ class TestRegistration(unittest.TestCase):
         self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Тест '2' не прошел")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__"
     unittest.main()
     print("Everything passed")
