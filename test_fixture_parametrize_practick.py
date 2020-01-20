@@ -30,4 +30,4 @@ def test_com(id, browser, ):
     browser.find_element_by_class_name("submit-submission").click()
     WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "smart-hints__hint")))
     res = browser.find_element_by_xpath("//div/pre").text
-    assert res == "Correct!"
+    assert res == "Correct!
