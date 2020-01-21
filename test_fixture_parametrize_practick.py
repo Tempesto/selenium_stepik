@@ -23,7 +23,8 @@ def test_com(id, browser, ):
     link = f"https://stepik.org/lesson/{id}/step/1"
     answer = math.log(int(time.time()))
     browser.get(link)
-    WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.XPATH, "//div/textarea")))
+    WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.XPATH, "//div/textarea"))#проверяем
+    # появилсяли элемент на страничке
     text = browser.find_element_by_xpath("//div/textarea")
     text.send_keys(str(answer))
     WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "submit-submission")))
